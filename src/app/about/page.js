@@ -1,6 +1,6 @@
 import Nav from '@/components/nav'
 
-export default function Home() {
+export default function About() {
   return (
     <>
       <Nav/>

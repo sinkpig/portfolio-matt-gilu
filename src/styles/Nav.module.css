@@ -1,0 +1,126 @@
+.nav {
+  --nav-height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: var(--nav-height);
+  position: fixed;
+  width: 100%;
+  background-color: var(--light-75);
+  -webkit-backdrop-filter: blur(40px);
+  backdrop-filter: blur(40px);
+  padding-right: var(--size-20);
+}
+.nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.logo {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--blue-100);
+  padding: var(--size-20);
+  transition: background 0.3s ease-in;
+}
+.logo:hover {
+  background: var(--light-50);
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  cursor: pointer;
+  position: relative;
+  min-width: 120px;
+  color: inherit;
+  font-family: var(--averia-sans-libre);
+  font-size: 18px;
+  gap: 4px;
+}
+
+.chevron {
+  height: 1rem;
+  width: 1rem;
+  flex-shrink: 0;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition-behavior: normal;
+}
+.navItem:hover .chevron {
+  transform: rotate(180deg);
+}
+
+.stroke {
+  position: absolute;
+  left: 50%;
+  bottom: 20%;
+  z-index: -1;
+  height: auto;
+  width: 75px;
+  color: var(--light-blue-25);
+  opacity: 0;
+  transform: translateX(-80%);
+  transition: all 0.3s ease-in;
+  transition-behavior: normal;
+}
+.navItem:hover .stroke {
+  opacity: 1;
+  transform: translateX(-45%);
+}
+.active .stroke {
+  opacity: 1;
+  color: var(--light-blue-50);
+  transform: translateX(-45%);
+}
+
+.toggle {
+  display: none;
+}
+
+.dropdownContainer {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: -1;
+  background-color: var(--light-75);
+  -webkit-backdrop-filter: blur(100px);
+  backdrop-filter: blur(100px);
+  font-family: var(--varela-round);
+  transition: all .3s ease-in;
+  max-height: 0;
+}
+.navItem:hover .dropdownContainer {
+  max-height: 500px;
+}
+.dropdownContainer ul {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+.dropdownContainer li {
+  padding: 12px 16px;
+  text-wrap: nowrap;
+  list-style: none;
+  width: 100%;
+  transition: background-color 0.3s ease-out;
+  transition-behavior: normal;
+}
+.dropdownContainer li {
+  transition: all .4s ease;
+  opacity: 0;
+  transform: translateX(-16px);
+}
+.navItem:hover .dropdownContainer li {
+  opacity: 1;
+  transform: translateX(0)
+}
+.dropdownContainer li:hover {
+  background-color: var(--light-blue-25);
+}
