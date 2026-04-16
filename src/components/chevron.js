@@ -10,8 +10,8 @@ function Chevron(props) {
         stroke="currentColor"
         strokeLinecap="round"
         strokeLinejoin="round"
-        strokeWidth={1.5}
-        d="M4 6l4 4 4-4"
+        strokeWidth={2}
+        d="M4 6 L8 10 L12 6"
       />
     </svg>
   )

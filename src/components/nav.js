@@ -25,16 +25,14 @@ export default function Nav() {
           <div className={styles.stroke}>
             <Stroke/>
           </div>
-          <div className={styles.dropdownContainer}>
+          <div className={styles.dropdown}>
             <ul>
               <li>
                 <Link
                   href="/freelance"
                   prefetch={false}
                 >
-                  <span>
-                    Freelance
-                  </span>
+                  Freelance
                 </Link>
               </li>
               <li>
@@ -42,9 +40,7 @@ export default function Nav() {
                   href="/personal-pieces"
                   prefetch={false}
                 >
-                  <span>
-                    Personal Pieces
-                  </span>
+                  Personal Pieces
                 </Link>
               </li>
               <li>
@@ -52,9 +48,7 @@ export default function Nav() {
                   href="/sketchbook"
                   prefetch={false}
                 >
-                  <span>
-                    Sketchbook
-                  </span>
+                  Sketchbook
                 </Link>
               </li>
             </ul>

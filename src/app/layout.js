@@ -1,6 +1,8 @@
 import { Varela_Round, Khand, Averia_Sans_Libre } from "next/font/google";
 import "./globals.css";
 
+import Nav from '@/components/Nav'
+
 const varelaRound = Varela_Round({
   weight: '400',
   subsets: ["latin"],
@@ -24,7 +26,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="es" className={`${varelaRound.className} ${khand.className} ${averiaSansLibre.className}`}>
-      <body>{children}</body>
+      <body>
+        <Nav/>
+        {children}
+      </body>
     </html>
   );
 }

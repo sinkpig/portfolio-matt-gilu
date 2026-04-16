@@ -26,10 +26,6 @@
   justify-content: center;
   color: var(--blue-100);
   padding: var(--size-20);
-  transition: background 0.3s ease-in;
-}
-.logo:hover {
-  background: var(--light-75);
 }
 
 .navItem {
@@ -39,22 +35,36 @@
   height: 100%;
   cursor: pointer;
   position: relative;
+  z-index: 1;
   min-width: 120px;
   color: inherit;
   font-family: var(--averia-sans-libre);
   font-size: 18px;
-  gap: 4px;
+  gap: 2px;
+}
+
+.navItem,
+.logo {
+  transition: background .3s ease-in;
+}
+.navItem:hover,
+.logo:hover {
+  background: var(--background);
 }
 
 .chevron {
-  height: 1rem;
-  width: 1rem;
-  flex-shrink: 0;
-  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  transition-behavior: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
 }
-.navItem:hover .chevron {
-  transform: rotate(180deg);
+.chevron svg path {
+  d: path("M4 6 L8 10 L12 6");
+  transition: d 0.45s cubic-bezier(.68,-0.55,.27,1.55);
+}
+.navItem:hover .chevron svg path {
+  d: path("M4 10 L8 6 L12 10");
 }
 
 .stroke {
@@ -67,7 +77,7 @@
   color: var(--light-blue-25);
   opacity: 0;
   transform: translateX(-80%);
-  transition: all 0.3s ease-in;
+  transition: all .3s cubic-bezier(.79,.14,.15,.86);
   transition-behavior: normal;
 }
 .navItem:hover .stroke {
@@ -84,43 +94,44 @@
   display: none;
 }
 
-.dropdownContainer {
+.dropdown {
   position: absolute;
   top: 100%;
   left: 0;
-  z-index: -1;
-  background-color: var(--light-100);
-  -webkit-backdrop-filter: blur(100px);
-  backdrop-filter: blur(100px);
+  background-color: var(--background);
   font-family: var(--varela-round);
-  transition: all .3s ease-in;
+  transition: max-height 1s cubic-bezier(.18,.89,.32,1.28);
+  width: max-content;
   max-height: 0;
 }
-.navItem:hover .dropdownContainer {
+.navItem:hover .dropdown {
   max-height: 500px;
 }
-.dropdownContainer ul {
+.dropdown ul {
   display: flex;
   align-items: start;
   flex-direction: column;
 }
-.dropdownContainer li {
-  padding: 12px 16px;
+.dropdown li {
   text-wrap: nowrap;
   list-style: none;
   width: 100%;
   transition: background-color 0.3s ease-out;
   transition-behavior: normal;
-}
-.dropdownContainer li {
   transition: all .4s ease;
   opacity: 0;
   transform: translateX(-16px);
 }
-.navItem:hover .dropdownContainer li {
+.navItem:hover .dropdown li {
   opacity: 1;
   transform: translateX(0)
 }
-.dropdownContainer li:hover {
+.dropdown li:hover {
   background-color: var(--light-blue-25);
+}
+.dropdown a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding: 12px 16px;
 }

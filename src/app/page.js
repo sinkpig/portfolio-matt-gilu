@@ -1,9 +1,11 @@
-import Nav from '@/components/Nav'
+import ArtGrid from '@/components/ArtGrid'
 
 export default function Home() {
   return (
     <>
-      <Nav/>
+      <main>
+        <ArtGrid/>
+      </main>
     </>
   );
 }
