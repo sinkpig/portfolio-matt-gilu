@@ -1,0 +1,20 @@
+.artContainer {
+  overflow: hidden;;
+  background-color: var(--light-blue-25);
+  min-height: 200px;
+}
+
+.artContainer img {
+  transition: all 0.3s ease-in;
+  transition-behavior: normal;
+  overflow: visible;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  cursor: zoom-in;
+}
+
+.artContainer:hover img {
+  scale: 105%;
+}
