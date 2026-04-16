@@ -1,13 +1,13 @@
 .nav {
-  --nav-height: 64px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   height: var(--nav-height);
   position: fixed;
+  z-index: 1;
   width: 100%;
-  background-color: var(--light-75);
+  background-color: var(--light-80);
   -webkit-backdrop-filter: blur(40px);
   backdrop-filter: blur(40px);
   padding-right: var(--size-20);
@@ -29,7 +29,7 @@
   transition: background 0.3s ease-in;
 }
 .logo:hover {
-  background: var(--light-50);
+  background: var(--light-75);
 }
 
 .navItem {
@@ -89,7 +89,7 @@
   top: 100%;
   left: 0;
   z-index: -1;
-  background-color: var(--light-75);
+  background-color: var(--light-100);
   -webkit-backdrop-filter: blur(100px);
   backdrop-filter: blur(100px);
   font-family: var(--varela-round);
