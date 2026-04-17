@@ -2,9 +2,9 @@
 import Link from "next/link";
 import { usePathname } from 'next/navigation'
 import styles from '@/styles/Nav.module.css'
-import Logo from '@/components/Logo'
-import Chevron from "@/components/Chevron"
-import Stroke from "@/components/Stroke"
+import Logo from '@/components/icons/Logo'
+import Chevron from "@/components/icons/Chevron"
+import Stroke from "@/components/icons/Stroke"
 
 export default function Nav() {
   const pathname = usePathname()
