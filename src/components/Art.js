@@ -1,17 +1,20 @@
-import styles from '@/styles/Art.module.css'
 import Image from 'next/image'
+import Link from 'next/link'
+import styles from '@/styles/Art.module.css'
 
-export default function Art(props) {
+export default function Art({src, alt}) {
   return (
-    <>
-      <div className={styles.artContainer}>
-        <Image
-          alt="Image"
-          width={400}
-          height={260}
-          {...props}
-        />
-      </div>
-    </>
+    <Link
+      href={`/?show=true&src=${encodeURIComponent(src)}`}
+      className={styles.artContainer}
+      scroll = {false}
+    >
+      <Image
+        width={400}
+        height={260}
+        src={src}
+        alt={alt}
+      />
+    </Link>
   )
 }
