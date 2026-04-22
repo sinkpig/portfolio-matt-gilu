@@ -14,6 +14,7 @@ export default function Art({src, alt}) {
         height={260}
         src={src}
         alt={alt}
+        unoptimized={src.endsWith('.gif')}
       />
     </Link>
   )

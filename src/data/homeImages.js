@@ -1,47 +1,47 @@
 export const homeImages = {
   firstColumn: [
     {
-      src: '/Shieni.png',
+      src: '/shieni.jpg',
       alt: '',
     },
     {
-      src: '/Concurso Vograce.png',
+      src: '/concurso-vograce.jpg',
       alt: '',
     },
     {
-      src: '/Dot Attack.png',
+      src: '/dot-attack.jpg',
       alt: '',
     },
   ],
   secondColumn: [
     {
-      src: '/Mini-study-Animation-Ten.gif',
+      src: '/mini-study-animation-ten.gif',
       alt: '',
     },
     {
-      src: '/Renard Attack.png',
+      src: '/renard-attack.jpg',
       alt: '',
     },
     {
-      src: '/Berry Attack.png',
+      src: '/berry-attack.jpg',
       alt: '',
     },
     {
-      src: '/Attack 2 Dip - sinkpig.png',
+      src: '/attack-dip.jpg',
       alt: '',
     },
   ],
   thirdColumn: [
     {
-      src: '/Character Sheet Byron.png',
+      src: '/character-sheet-byron.jpg',
       alt: '',
     },
     {
-      src: '/Cell Shade.png',
+      src: '/cell-shade.jpg',
       alt: '',
     },
     {
-      src: '/Characters.png',
+      src: '/characters.jpg',
       alt: '',
     },
   ]

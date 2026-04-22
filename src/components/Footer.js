@@ -14,7 +14,6 @@ export default function Footer() {
       <div className={styles.container}>
         { socialLinks.map((i) => (
           <address key={i.title}>
-            {console.log(encodeURIComponent(i.subject))}
             <Link
               href={
                 i.title === 'email'
