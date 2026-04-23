@@ -67,6 +67,9 @@ body {
   justify-content: space-between;
   gap: 140px;
 }
+body.modal-show {
+  overflow-y: hidden;
+}
 
 a {
   color: inherit;
@@ -77,8 +80,13 @@ main {
   padding-top: var(--nav-height);
 }
 
-body.modal-show {
-  overflow-y: hidden;
+button {
+  border: none;
+  background: none repeat scroll 0 0 transparent;
+  line-height: 0;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
 }
 
 /* @media (prefers-color-scheme: dark) {
