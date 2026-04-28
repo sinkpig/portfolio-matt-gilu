@@ -33,7 +33,7 @@ export const homeImages = {
   ],
   thirdColumn: [
     {
-      src: '/character-sheet-byron.jpg',
+      src: '/characters.jpg',
       alt: '',
     },
     {
@@ -41,7 +41,7 @@ export const homeImages = {
       alt: '',
     },
     {
-      src: '/characters.jpg',
+      src: '/character-sheet-byron.jpg',
       alt: '',
     },
   ]

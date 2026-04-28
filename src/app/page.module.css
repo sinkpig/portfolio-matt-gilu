@@ -12,3 +12,22 @@
   row-gap: 6px;
   column-gap: 6px;
 }
+
+@media screen and (max-width: 640px) {
+  .artGrid {
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, 1fr);
+    grid-auto-columns: auto;
+  }
+  .artFlex {
+    flex-direction: row;
+    overflow-x: auto;
+    width: 100%;
+  }
+  .artFlex a {
+    min-width: fit-content;
+    min-height: 100px;
+    max-height: 250px;
+    cursor: zoom-in;
+  }
+}
