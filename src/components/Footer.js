@@ -29,6 +29,7 @@ export default function Footer() {
                 src={i.image}
                 width={40}
                 height={40}
+                loading="lazy"
               />
             </Link>
           </address>

@@ -1,0 +1,41 @@
+.title {
+  font-family: var(--averia-sans-libre);
+  font-size: var(--size-40);
+  position: relative;
+}
+.title::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  --webkit-mask-image: url('/brush-stroke.svg');
+  mask-image: url('/brush-stroke.svg');
+  --webkit-mask-size: cover;
+  mask-size: cover;
+  --webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  z-index: -1;
+  width: 300px;
+  height: 70px;
+}
+
+.blue {
+  color: var(--light-100);
+}
+.brown {
+  color: var(--light-100);
+}
+.title.blue::before {
+  background-color: var(--blue-100);
+}
+.title.lightBlue::before {
+  background-color: var(--light-blue-100);
+}
+.title.orange::before {
+  background-color: var(--orange-100);
+}
+.title.brown::before {
+  background-color: #B06B37;
+}
