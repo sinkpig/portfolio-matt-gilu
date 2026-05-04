@@ -60,6 +60,36 @@
   padding-top: 30px ;
 }
 
+@media screen and (max-width: 1150px) {
+  .content {
+    padding: 0;
+    width: 500px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .about {
+    padding: 0 var(--size-40);
+  }
+}
+@media screen and (max-width: 860px) {
+  .about {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .about::before {
+    bottom: -5%;
+    top: unset;
+    transform: unset;
+    transform: translateX(-50%);
+  }
+  .about img {
+    width: 300px;
+  }
+  .content {
+    order: 2;
+    width: 100%;
+  }
+}
 @media screen and (max-width: 640px) {
   .artGrid {
     grid-template-columns: auto;
@@ -76,5 +106,11 @@
     min-height: 100px;
     max-height: 250px;
     cursor: zoom-in;
+  }
+  .about {
+    margin-top: 80px;
+  }
+  .about img {
+    width: 250px;
   }
 }
