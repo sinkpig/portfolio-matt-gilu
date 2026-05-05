@@ -1,9 +1,11 @@
 import styles from '@/styles/Title.module.css'
 
-export default function Title({ text, tag: Tag = 'p', bgColor }) {
+export default function Title({ text, tag: Tag = 'p', bgColor, direction = 'left', className }) {
   const classes = [
     bgColor && styles[bgColor],
-    styles.title
+    direction && styles[direction],
+    styles.title,
+    className
   ].filter(Boolean).join(' ')
 
   return (

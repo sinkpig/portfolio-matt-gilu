@@ -13,7 +13,7 @@ export default function Home() {
         <ArtGrid/>
         <section className={styles.about}>
           <div className={styles.content}>
-            <Title text="Hello!!" tag="h1" bgColor="brown"/>
+            <Title text="Hello!!" tag="h1" bgColor="brown" direction="center"/>
             <p>{t.paragraph}</p>
           </div>
           <Image

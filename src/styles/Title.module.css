@@ -1,15 +1,17 @@
 .title {
   font-family: var(--averia-sans-libre);
-  font-size: var(--size-40);
+  font-size: 200%;
   position: relative;
+}
+h3.title {
+  font-family: var(--khand);
+  font-size: 150%;
 }
 .title::before {
   content: '';
   display: block;
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   --webkit-mask-image: url('/brush-stroke.svg');
   mask-image: url('/brush-stroke.svg');
   --webkit-mask-size: cover;
@@ -19,6 +21,22 @@
   z-index: -1;
   width: 300px;
   height: 70px;
+}
+h3.title::before {
+  width: 200px;
+  height: 49px;
+}
+
+.title.left::before {
+  left: -40px;
+  transform: translateY(-50%);
+}
+h3.title.left::before {
+  left: -95px;
+}
+.title.center::before {
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .blue {
@@ -32,6 +50,9 @@
 }
 .title.lightBlue::before {
   background-color: var(--light-blue-100);
+}
+.title.lightestBlue::before {
+  background-color: var(--lightest-blue-100);
 }
 .title.orange::before {
   background-color: var(--orange-100);
