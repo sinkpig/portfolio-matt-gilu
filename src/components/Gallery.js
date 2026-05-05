@@ -1,0 +1,29 @@
+import ModalProvider from '@/components/modal/ModalProvider'
+import Title from "@/components/Title";
+import Art from '@/components/Art'
+import styles from '@/styles/Gallery.module.css'
+
+export default function Gallery({ title, bgColor, description, object }) {
+  return (
+    <>
+      <main>
+        <div className={styles.container}>
+          <Title text={title} tag="h1" bgColor={bgColor} />
+          {description && <p>{description}</p>}
+        </div>
+
+        <div className={styles.section}>
+          {object.map((section) => (
+            <div key={section.title} className={styles.sectionContainer}>
+              <Title text={section.title} tag="h3" bgColor="lightestBlue"/>
+              {section.art.map((i) => (
+                <Art key={i.src} src={i.src} alt={i.alt} />
+              ))}
+            </div>
+          ))}
+        </div>
+      </main>
+      <ModalProvider/>
+    </>
+  )
+}
