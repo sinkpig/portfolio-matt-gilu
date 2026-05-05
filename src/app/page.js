@@ -1,3 +1,4 @@
+'use client'
 import Image from "next/image";
 import ArtGrid from '@/components/ArtGrid'
 import ModalProvider from '@/components/modal/ModalProvider'

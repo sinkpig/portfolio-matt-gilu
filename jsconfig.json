@@ -1,11 +1,13 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
       "@/app/*": ["./src/app/*"],
       "@/styles/*": ["./src/styles/*"],
       "@/components/*": ["./src/components/*"],
       "@/data/*": ["./src/data/*"]
-    }
+    },
+    "ignoreDeprecations": "6.0"
   }
 }
