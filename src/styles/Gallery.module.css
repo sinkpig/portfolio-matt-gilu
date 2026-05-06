@@ -17,10 +17,45 @@
 }
 .section h3 {
   padding-left: var(--size-20);
+  margin-bottom: var(--size-40);
 }
 
 .sectionContainer {
   display: flex;
-  flex-direction: column;
-  gap: var(--size-40);
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: var(--size-40);
+}
+.sectionContainer:last-of-type {
+  margin-bottom: 0;
+}
+.sectionContainer a {
+  flex: 1 1 auto;
+  min-width: 150px;
+  max-height: 300px;
+}
+.sectionContainer a:nth-child(4n+1) {
+  width: 33%;
+}
+.sectionContainer a:nth-child(4n+2) {
+  width: 41%;
+}
+.sectionContainer a:nth-child(4n+3) {
+  width: 24%;
+}
+.sectionContainer a:nth-child(4n+4) {
+  width: 40%;
+}
+.sectionContainer a:last-child {
+  max-width: 40%;
+}
+
+@media screen and (max-width: 420px) {
+  .sectionContainer a {
+    width: 100% !important;
+    max-height: 200px;
+  }
+  .sectionContainer a:last-child {
+    max-width: unset;
+  }
 }

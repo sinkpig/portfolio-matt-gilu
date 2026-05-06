@@ -14,11 +14,13 @@ export default function Gallery({ title, bgColor, description, object }) {
 
         <div className={styles.section}>
           {object.map((section) => (
-            <div key={section.title} className={styles.sectionContainer}>
+            <div key={section.title}>
               <Title text={section.title} tag="h3" bgColor="lightestBlue"/>
-              {section.art.map((i) => (
-                <Art key={i.src} src={i.src} alt={i.alt} />
-              ))}
+              <div className={styles.sectionContainer}>
+                {section.art.map((i) => (
+                  <Art key={i.src} src={i.src} alt={i.alt} />
+                ))}
+              </div>
             </div>
           ))}
         </div>
