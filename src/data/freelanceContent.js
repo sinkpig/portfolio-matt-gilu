@@ -37,6 +37,10 @@ export const freelanceContent = {
           src: '/freelance/renard-attack.jpg',
           alt: '',
         },
+        {
+          src: '/freelance/attack-dip.jpg',
+          alt: '',
+        },
       ]
     },
     {
