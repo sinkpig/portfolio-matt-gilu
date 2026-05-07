@@ -32,25 +32,28 @@
 .sectionContainer a {
   flex: 1 1 auto;
   min-width: 150px;
-  max-height: 400px;
+  max-height: 350px;
 }
 .sectionContainer a:nth-child(4n+1) {
   width: 33%;
 }
-.sectionContainer a:nth-child(4n+2) {
-  width: 41%;
+.sectionContainer a:nth-child(4n+2),
+.sectionContainer a:nth-child(4n+4) {
+  width: 30%;
 }
 .sectionContainer a:nth-child(4n+3) {
-  width: 24%;
-}
-.sectionContainer a:nth-child(4n+4) {
-  width: 40%;
+  width: 36%;
 }
 .sectionContainer a:last-child {
-  max-width: 40%;
+  max-width: 50%;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 768px) {
+  .sectionContainer a {
+    max-height: 270px;
+  }
+}
+@media screen and (max-width: 640px) {
   .sectionContainer a {
     width: 100% !important;
     max-height: 200px;
