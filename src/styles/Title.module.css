@@ -32,7 +32,7 @@ h3.title::before {
   transform: translateY(-50%);
 }
 h3.title.left::before {
-  left: -95px;
+  left: 0;
 }
 .title.center::before {
   left: 50%;
