@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { Suspense } from 'react'
 import { useSearchParams } from 'next/navigation'
+import { usePathname } from 'next/navigation'
 import Modal from '@/components/modal/Modal'
 
 function ModalConsumer() {
@@ -8,6 +9,7 @@ function ModalConsumer() {
   const src = params.get('src') ? decodeURIComponent(params.get('src')) : null
   const alt = params.get('alt') ?? ''
   const show = !!params.get('show') && !!src
+  const pathname = usePathname()
 
   useEffect(() => {
     if (show) { document.body.classList.add('modal-show') }
@@ -15,7 +17,7 @@ function ModalConsumer() {
   }, [show])
 
   if (!show) return null
-  return <Modal src={src} alt={alt} />
+  return <Modal src={src} alt={alt} href={pathname}/>
 }
 
 export default function ModalProvider() {
