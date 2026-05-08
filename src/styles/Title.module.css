@@ -14,6 +14,7 @@ p.title {
   font-family: var(--khand);
   font-weight: 500;
   font-size: 150%;
+  width: fit-content;
 }
 .title::before {
   content: '';
@@ -25,19 +26,23 @@ p.title {
   --webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   z-index: -1;
+  transition: background-color .3s ease;
 }
 h1.title::before {
   width: 300px;
   height: 70px;
 }
-h1.title::before,
-h3.title::before {
-  --webkit-mask-image: url('/brush-stroke.svg');
-  mask-image: url('/brush-stroke.svg');
+h1.title::before {
+  --webkit-mask-image: url('/svg/brush-stroke.svg');
+  mask-image: url('/svg/brush-stroke.svg');
 }
-h3.title::before {
+h3.title::before,
+p.title::before {
+  --webkit-mask-image: url('/svg/brush-stroke-line.svg');
+  mask-image: url('/svg/brush-stroke-line.svg');
   width: 200px;
-  height: 49px;
+  height: 25px;
+  top: 75%;
 }
 
 .title.left::before {
@@ -45,7 +50,7 @@ h3.title::before {
   transform: translateY(-50%);
 }
 h3.title.left::before {
-  left: 0;
+  left: -12px;
 }
 .title.center::before {
   left: 50%;
@@ -72,4 +77,8 @@ h3.title.left::before {
 }
 .title.brown::before {
   background-color: #B06B37;
+}
+
+.title:has(a).lightestBlue:hover::before {
+  background-color: var(--light-blue-50);
 }

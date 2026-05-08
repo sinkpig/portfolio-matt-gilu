@@ -14,7 +14,7 @@ export default function About() {
         <div className={styles.container}>
           <Title text={t.title} bgColor="orange"/>
           <p>{t.paragraph}</p>
-          <Title tag="p" bgColor="lightestBlue">
+          <Title tag="p" bgColor="lightestBlue" direction="center">
             <Link href={t.link} download>{t.linkText}</Link>
           </Title>
         </div>

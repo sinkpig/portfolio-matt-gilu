@@ -30,8 +30,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  --webkit-mask-image: url('/brush-stroke-2.svg');
-  mask-image: url('/brush-stroke-2.svg');
+  --webkit-mask-image: url('/svg/brush-stroke-square.svg');
+  mask-image: url('/svg/brush-stroke-square.svg');
   --webkit-mask-size: cover;
   mask-size: cover;
   --webkit-mask-repeat: no-repeat;
