@@ -1,10 +1,18 @@
 .title {
+  position: relative;
+}
+h1.title {
   font-family: var(--averia-sans-libre);
   font-size: 200%;
-  position: relative;
 }
 h3.title {
   font-family: var(--khand);
+  font-size: 150%;
+  font-weight: 500;
+}
+p.title {
+  font-family: var(--khand);
+  font-weight: 500;
   font-size: 150%;
 }
 .title::before {
@@ -12,15 +20,20 @@ h3.title {
   display: block;
   position: absolute;
   top: 50%;
-  --webkit-mask-image: url('/brush-stroke.svg');
-  mask-image: url('/brush-stroke.svg');
   --webkit-mask-size: cover;
   mask-size: cover;
   --webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   z-index: -1;
+}
+h1.title::before {
   width: 300px;
   height: 70px;
+}
+h1.title::before,
+h3.title::before {
+  --webkit-mask-image: url('/brush-stroke.svg');
+  mask-image: url('/brush-stroke.svg');
 }
 h3.title::before {
   width: 200px;

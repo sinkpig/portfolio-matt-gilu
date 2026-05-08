@@ -79,7 +79,8 @@ a {
 }
 
 main {
-  padding-top: var(--nav-height);
+  margin-top: var(--nav-height);
+  flex: 1 1 auto;
 }
 
 button {
