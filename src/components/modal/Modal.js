@@ -3,11 +3,11 @@ import Image from 'next/image'
 import styles from '@/styles/Modal.module.css'
 import Close from '@/components/icons/Close'
 
-export default function Modal({ src, alt }) {
+export default function Modal({ src, alt, href }) {
   return (
     <div className={styles.modal}>
       <Link
-        href="/"
+        href={href}
         className={styles.close}
         scroll={false}
       >

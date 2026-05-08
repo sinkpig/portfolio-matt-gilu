@@ -8,7 +8,7 @@ export default function Gallery({ title, bgColor, description, object }) {
     <>
       <main>
         <div className={styles.container}>
-          <Title text={title} tag="h1" bgColor={bgColor} />
+          <Title text={title} bgColor={bgColor} />
           {description && <p>{description}</p>}
         </div>
 

@@ -10,7 +10,7 @@ export default function Art({src, alt, loading}) {
 
   return (
     <Link
-      href={`/?show=true&src=${encodeURIComponent(src)}`}
+      href={`${pathname}?show=true&src=${encodeURIComponent(src)}&alt=${encodeURIComponent(alt)}`}
       className={styles.artContainer}
       scroll = {false}
     >
