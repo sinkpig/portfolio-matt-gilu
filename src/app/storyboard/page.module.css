@@ -1,0 +1,41 @@
+.container {
+  padding: 0 var(--size-20);
+  gap: var(--size-40);
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 80px;
+  display: flex;
+}
+
+.section {
+  flex-direction: column;
+  gap: 80px;
+  display: flex;
+}
+.section h3 {
+  margin-bottom: var(--size-40);
+  padding-left: var(--size-20);
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: var(--size-40);
+  padding: 0 var(--size-20);
+}
+.content > div {
+  max-width: 50%;
+}
+.content h6 {
+  font-size: 18px;
+  font-family: var(--khand);
+  font-weight: 500;
+}
+
+.thumbs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: 4px;
+  flex-wrap: wrap;
+}

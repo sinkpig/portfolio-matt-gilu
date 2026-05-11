@@ -10,7 +10,7 @@ const varelaRound = Varela_Round({
 });
 
 const khand = Khand({
-  weight: ['400', '500'],
+  weight: '500',
   subsets: ["latin"]
 })
 
