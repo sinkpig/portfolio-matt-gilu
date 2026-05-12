@@ -19,16 +19,18 @@ export default function Storyboard() {
             <div key={section.title}>
               <Title text={section.title} tag="h3" bgColor="lightestBlue" />
               <div className={styles.content}>
-                <iframe src={section.link} frameBorder="0" width="560" height="350" allowFullScreen/>
+                <iframe src={section.link} allowFullScreen/>
                 <div>
                   <h6>{section.subtitle}</h6>
                   <p>{section.description}</p>
                 </div>
               </div>
-              <div className={styles.thumbs}>
-                {section.images.map((i) => (
-                  <Art key={i.id} src={i.src} alt={i.alt} />
-                ))}
+              <div className={styles.overflow}>
+                <div className={styles.thumbs}>
+                  {section.images.map((i) => (
+                    <Art key={i.src} src={i.src} alt={i.alt} />
+                  ))}
+                </div>
               </div>
             </div>
           ))}
