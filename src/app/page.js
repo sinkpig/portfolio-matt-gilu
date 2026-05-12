@@ -1,5 +1,6 @@
 'use client'
 import Image from "next/image";
+import Link from "next/link";
 import ArtGrid from '@/components/ArtGrid'
 import ModalProvider from '@/components/modal/ModalProvider'
 import Title from '@/components/Title'
@@ -16,6 +17,7 @@ export default function Home() {
           <div className={styles.content}>
             <Title text="Hello!!" bgColor="brown" direction="center"/>
             <p>{t.paragraph}</p>
+            <Link href={`mailto:${t.email}?subject=${encodeURIComponent(t.subject)}`}>{t.email}</Link>
           </div>
           <Image
             alt={t.imageAlt}
