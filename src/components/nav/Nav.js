@@ -1,6 +1,7 @@
 'use client'
 import Link from "next/link";
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { usePathname } from 'next/navigation'
 import styles from '@/styles/Nav.module.css'
 import Logo from '@/components/icons/Logo'
 import Burger from '@/components/icons/Burger'
@@ -9,10 +10,16 @@ import Close from '@/components/icons/Close'
 
 export default function Nav() {
   const [active, setActive] = useState(false)
+  const pathname = usePathname()
 
   function handleClick() {
     setActive(!active)
   }
+
+  useEffect(() => {
+    const timer = setTimeout(() => setActive(false), 0)
+    return () => clearTimeout(timer)
+  }, [pathname])
 
   return (
     <>
@@ -37,10 +44,9 @@ export default function Nav() {
       <div
         className={`${styles.sideNav} ${active ? styles.active : ''}`}
         role="dialog"
-        onClick={handleClick}
       >
         <div className={styles.container}>
-          <button type="button">
+          <button type="button" onClick={handleClick}>
             <Close/>
           </button>
           <NavLinks/>

@@ -1,6 +1,6 @@
 .artContainer {
   overflow: hidden;;
-  background-color: var(--light-blue-25);
+  background-color: var(--dark-25);
   min-height: 200px;
   line-height: 0;
 }

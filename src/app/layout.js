@@ -1,7 +1,7 @@
 import { Varela_Round, Khand, Averia_Sans_Libre } from "next/font/google";
 import "./globals.css";
 
-import Nav from '@/components/Nav'
+import Nav from '@/components/nav/Nav'
 import Footer from '@/components/Footer'
 
 const varelaRound = Varela_Round({
@@ -10,7 +10,7 @@ const varelaRound = Varela_Round({
 });
 
 const khand = Khand({
-  weight: ['400', '500'],
+  weight: '500',
   subsets: ["latin"]
 })
 
