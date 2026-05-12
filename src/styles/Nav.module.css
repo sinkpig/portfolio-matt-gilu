@@ -27,6 +27,9 @@
   color: var(--blue-100);
   padding: var(--size-20);
 }
+.logo svg {
+  width: auto;
+}
 
 .navItem {
   display: flex;
