@@ -37,16 +37,21 @@
   --webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   z-index: -1;
-  background-color: var(--orange-50);
+  background-color: var(--lightest-orange-100);
   width: 1300px;
-  height: 400px;
+  height: 450px;
 }
 .about p {
   line-height: 40px;
 }
+.about h1 {
+  z-index: 0;
+}
 .about img {
   width: 400px;
   height: auto;
+  position: relative;
+  z-index: 1;
 }
 .about a {
   font-family: var(--khand);
@@ -78,14 +83,12 @@
 }
 @media screen and (max-width: 860px) {
   .about {
+    padding: 0;
     flex-direction: column;
     margin-bottom: 30px;
   }
   .about::before {
-    bottom: -5%;
-    top: unset;
-    transform: unset;
-    transform: translateX(-50%);
+    display: none;
   }
   .about img {
     width: 300px;
@@ -93,6 +96,9 @@
   .content {
     order: 2;
     width: 100%;
+    background-color: var(--lightest-orange-100);
+    padding: 80px var(--size-40) var(--size-20) var(--size-40);
+    margin-top: -85px;
   }
 }
 @media screen and (max-width: 640px) {
