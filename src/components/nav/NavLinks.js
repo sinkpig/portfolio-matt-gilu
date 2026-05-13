@@ -20,7 +20,7 @@ export default function NavLinks() {
         </div>
         <div className={styles.dropdown}>
           <ul>
-            <li>
+            <li className={`${isActive('/freelance') ? styles.active : ''}`}>
               <Link
                 href="/freelance"
                 prefetch={false}
@@ -28,7 +28,7 @@ export default function NavLinks() {
                 Freelance
               </Link>
             </li>
-            <li>
+            <li className={`${isActive('/personal-pieces') ? styles.active : ''}`}>
               <Link
                 href="/personal-pieces"
                 prefetch={false}
@@ -36,7 +36,7 @@ export default function NavLinks() {
                 Personal Pieces
               </Link>
             </li>
-            <li>
+            <li className={`${isActive('/sketchbook') ? styles.active : ''}`}>
               <Link
                 href="/sketchbook"
                 prefetch={false}

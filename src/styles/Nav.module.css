@@ -92,7 +92,7 @@
   transform: translateX(-45%);
 }
 .navItem.active .stroke {
-  color: var(--light-blue-50);
+  color: var(--light-blue-25);
 }
 
 .toggle {
@@ -134,7 +134,8 @@
   opacity: 1;
   transform: translateX(0)
 }
-.dropdown li:hover {
+.dropdown li:hover,
+.dropdown li.active {
   background-color: var(--light-blue-25);
 }
 .dropdown a {
@@ -191,7 +192,7 @@ body:has(.sideNav.active) {
   padding: 0 var(--size-20);
 }
 .sideNav .stroke {
-  left: 10%;
+  left: 8%;
 }
 .sideNav .navItem:has(.dropdown) .stroke {
   top: 4%;
