@@ -27,9 +27,6 @@
   color: var(--blue-100);
   padding: var(--size-20);
 }
-.logo svg {
-  width: auto;
-}
 
 .navItem {
   display: flex;
@@ -62,6 +59,11 @@
   justify-content: center;
   width: 16px;
   height: 16px;
+}
+.chevron svg,
+.logo svg {
+  width: auto;
+  height: 100%;
 }
 .chevron svg path {
   d: path("M4 6 L8 10 L12 6");
@@ -167,7 +169,6 @@ body:has(.sideNav.active) {
   flex-direction: column;
   align-items: end;
   height: 100%;
-  width: 40vw;
   background-color: var(--background);
   padding: var(--size-20) 0;
   transform: translateX(100%);
@@ -217,15 +218,27 @@ body:has(.sideNav.active) {
   display: flex;
 }
 .sideNav .dropdown li {
-  width: 40vw;
   margin-left: -20px;
 }
 
+.sideNav .container,
+.sideNav .dropdown li {
+  width: 40vw;
+}
+
 @media screen and (max-width: 640px) {
+  .sideNav {
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+  }
   .sideNav.active {
     opacity: 1;
     visibility: visible;
     pointer-events: all;
+  }
+  .sideNav .dropdown li,
+  .sideNav .container {
+    width: 60vw;
   }
   .toggle {
     display: block;
