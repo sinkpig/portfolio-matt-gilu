@@ -12,6 +12,6 @@ export const textContent = {
     src: "/about/sketch-portafolio-about.png",
     imageAlt: "",
     linkText: "Download resume",
-    link: "",
+    link: "/about/cv-gianni-barbieri.pdf",
   }
 }

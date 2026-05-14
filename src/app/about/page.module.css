@@ -22,7 +22,10 @@ body:has(.about) {
 .container {
   display: flex;
   flex-direction: column;
-  gap: var(--size-40);
+  gap: 10px;
+}
+.container h1 {
+  margin-bottom: var(--size-20);
 }
 
 @media screen and (max-width: 992px) {
