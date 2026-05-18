@@ -111,8 +111,7 @@
   width: max-content;
   max-height: 0;
 }
-.navItem:hover .dropdown,
-.navItem:focus-within .dropdown {
+.navItem:hover .dropdown {
   max-height: 500px;
 }
 .dropdown ul {
@@ -211,8 +210,7 @@
   background-color: transparent;
   margin-top: var(--size-20);
 }
-.sideNav .navItem:hover .dropdown,
-.sideNav .navItem:focus-within .dropdown {
+.sideNav .navItem:hover .dropdown {
   display: flex;
 }
 .sideNav .dropdown li {
@@ -240,6 +238,10 @@
   .sideNav .dropdown li,
   .sideNav .container {
     width: 60vw;
+  }
+  .sideNav .navItem:focus-within .dropdown {
+    display: flex;
+    max-height: 500px;
   }
   .toggle {
     display: block;
