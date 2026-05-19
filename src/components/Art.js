@@ -4,7 +4,7 @@ import Link from 'next/link'
 import styles from '@/styles/Art.module.css'
 import { usePathname } from 'next/navigation'
 
-export default function Art({src, alt}) {
+export default function Art({src, alt, position}) {
   const pathname = usePathname()
   const isHome = pathname === '/'
 
@@ -21,6 +21,7 @@ export default function Art({src, alt}) {
         alt={alt}
         unoptimized={src.endsWith('.gif')}
         loading={`${isHome ? 'eager' : 'lazy'}`}
+        className={styles[position]}
       />
     </Link>
   )

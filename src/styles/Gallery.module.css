@@ -50,13 +50,19 @@
 
 @media screen and (max-width: 768px) {
   .sectionContainer a {
-    max-height: 270px;
+    max-height: 235px;
   }
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 560px) {
+  .sectionContainer a {
+    max-height: 200px;
+    min-height: 155px;
+  }
+}
+@media screen and (max-width: 460px) {
   .sectionContainer a {
     width: 100% !important;
-    max-height: 200px;
+    max-height: 240px;
   }
   .sectionContainer a:last-child {
     max-width: unset;

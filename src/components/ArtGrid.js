@@ -8,7 +8,7 @@ export default function ArtGrid() {
       {Object.values(homeImages).map((c) => (
         <div key={c[0].src} className={styles.artFlex}>
           {c.map((i) => (
-            <Art key={i.src} src={i.src} alt={i.alt} />
+            <Art key={i.src} src={i.src} alt={i.alt} position={i.position}/>
           ))}
         </div>
       ))}
