@@ -1,5 +1,4 @@
 import { useEffect } from 'react'
-import { Suspense } from 'react'
 import { useSearchParams } from 'next/navigation'
 import { usePathname } from 'next/navigation'
 import Modal from '@/components/modal/Modal'
@@ -22,8 +21,6 @@ function ModalConsumer() {
 
 export default function ModalProvider() {
   return (
-    <Suspense fallback={null}>
-      <ModalConsumer />
-    </Suspense>
+    <ModalConsumer />
   )
 }

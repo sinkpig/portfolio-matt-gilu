@@ -46,6 +46,57 @@
   color: var(--light-100);
 }
 
+.loading {
+  position: fixed;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--dark-80);
+  -webkit-backdrop-filter: blur(100px);
+  backdrop-filter: blur(100px);
+}
+.loadingContent {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  color: var(--light-100);
+  font-size: 24px;
+}
+
+.dots {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+.dots span {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--light-100);
+  animation: loading 1.4s infinite ease-in-out;
+}
+.dots span:nth-child(1) {
+  animation-delay: 0s;
+}
+.dots span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.dots span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+@keyframes loading {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
 @media screen and (max-width: 640px) {
   .modal {
     --padding: 12px;

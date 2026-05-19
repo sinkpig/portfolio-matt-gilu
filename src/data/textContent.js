@@ -13,5 +13,6 @@ export const textContent = {
     imageAlt: "",
     linkText: "Download resume",
     link: "/about/cv-gianni-barbieri.pdf",
-  }
+  },
+  loading: 'Loading'
 }
