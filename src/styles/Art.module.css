@@ -4,7 +4,6 @@
   min-height: 200px;
   line-height: 0;
 }
-
 .artContainer img {
   transition: all 0.3s ease-in;
   transition-behavior: normal;
@@ -14,7 +13,31 @@
   object-fit: cover;
   cursor: zoom-in;
 }
-
 .artContainer:hover img {
   scale: 105%;
+}
+
+.artContainer img.top {
+  object-position: top;
+}
+.artContainer img.bottom {
+  object-position: bottom;
+}
+.artContainer img.left {
+  object-position: left;
+}
+.artContainer img.right {
+  object-position: right;
+}
+.artContainer img.vertical-25 {
+  object-position: center 25%;
+}
+.artContainer img.vertical-75 {
+  object-position: center 75%;
+}
+.artContainer img.horizontal-25 {
+  object-position: 25% center;
+}
+.artContainer img.horizontal-75 {
+  object-position: 75% center;
 }

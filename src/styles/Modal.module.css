@@ -4,7 +4,7 @@
   height: 100%;
   position: fixed;
   z-index: 99;
-
+  --padding: 20px;
 }
 .modal::before{
   content: "";
@@ -21,15 +21,15 @@
   backdrop-filter: blur(100px);
 }
 .modal img {
-  padding: 20px;
+  padding: var(--padding);
   object-fit: contain;
 }
 
 .close {
   position: absolute;
   z-index: 100;
-  right: 20px;
-  top: 20px;
+  right: var(--padding);
+  top: var(--padding);
   width: 24px;
   height: 24px;
   -webkit-backdrop-filter: blur(40px);
@@ -44,4 +44,10 @@
 .close:hover {
   background: var(--dark-100);
   color: var(--light-100);
+}
+
+@media screen and (max-width: 640px) {
+  .modal {
+    --padding: 12px;
+  }
 }

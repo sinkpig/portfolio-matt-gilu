@@ -28,7 +28,7 @@ export default function Storyboard() {
               <div className={styles.overflow}>
                 <div className={styles.thumbs}>
                   {section.images.map((i) => (
-                    <Art key={i.src} src={i.src} alt={i.alt} />
+                    <Art key={i.src} src={i.src} alt={i.alt} position={i.position} />
                   ))}
                 </div>
               </div>
