@@ -75,6 +75,10 @@ export const sketchbookContent = {
           src: '/sketchbook/crows.jpg',
           alt: ''
         },
+        {
+          src: '/sketchbook/story-beats.jpg',
+          alt: ''
+        },
       ]
     }
   ]
