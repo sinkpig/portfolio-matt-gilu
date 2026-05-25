@@ -9,43 +9,33 @@ export const storyboardContent = {
       images: [
         {
           src: '/storyboard/aydian-marlon-view-1.jpg',
-          alt: ''
         },
         {
           src: '/storyboard/aydian-marlon-view-2.jpg',
-          alt: ''
         },
         {
           src: '/storyboard/aydian-marlon-view-3.jpg',
-          alt: ''
         },
         {
           src: '/storyboard/aydian-marlon-view-4.jpg',
-          alt: ''
         },
         {
           src: '/storyboard/aydian-marlon-view-5.jpg',
-          alt: ''
         },
         {
           src: '/storyboard/aydian-marlon-view-6.jpg',
-          alt: ''
         },
         {
           src: '/storyboard/aydian-marlon-view-7.jpg',
-          alt: ''
         },
         {
           src: '/storyboard/aydian-marlon-view-8.jpg',
-          alt: ''
         },
         {
           src: '/storyboard/aydian-marlon-view-9.jpg',
-          alt: ''
         },
         {
           src: '/storyboard/aydian-marlon-view-10.jpg',
-          alt: ''
         },
       ]
     },
@@ -57,11 +47,9 @@ export const storyboardContent = {
       images: [
         {
           src: '/storyboard/shieni-view-1.jpg',
-          alt: ''
         },
         {
           src: '/storyboard/shieni-view-2.jpg',
-          alt: ''
         }
       ]
     },
@@ -73,7 +61,6 @@ export const storyboardContent = {
       images: [
         {
           src: '/storyboard/batman-thumbnails.jpg',
-          alt: ''
         },
       ]
     },

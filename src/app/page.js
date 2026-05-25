@@ -20,7 +20,7 @@ export default function Home() {
             <Link href={`mailto:${t.email}?subject=${encodeURIComponent(t.subject)}`}>{t.email}</Link>
           </div>
           <Image
-            alt={t.imageAlt}
+            alt="Decorative image in Matt Gilu's portfolio"
             src="/about-section.png"
             width={500}
             height={500}
