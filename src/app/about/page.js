@@ -1,22 +1,20 @@
-'use client'
 import Image from "next/image";
-import Link from "next/link";
 import styles from '@/app/about/page.module.css'
-import Title from '@/components/Title'
 import { textContent } from '@/data/textContent';
+import { getPageBySlug } from '@/lib/wordpress';
+import WordPressContent from '@/components/WordPressContent';
 
-export default function About() {
+export default async function About() {
+  const page = await getPageBySlug('about');
+  const contentHTML = page?.content?.rendered ?? '';
+
   const t = textContent.about
   return (
     <>
       <main className={styles.about}>
         <Image src={t.src} alt={t.imageAlt} width={600} height={600} loading="eager"/>
         <div className={styles.container}>
-          <Title text={t.title} bgColor="orange"/>
-          <p>{t.paragraph}</p>
-          <Title tag="p" bgColor="lightestBlue" direction="center">
-            <Link href={t.link} download>{t.linkText}</Link>
-          </Title>
+          <WordPressContent html={contentHTML} />
         </div>
       </main>
     </>
