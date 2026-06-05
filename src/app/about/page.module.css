@@ -12,8 +12,8 @@ body:has(.about) {
   gap: 0px;
 }
 .about img {
-  width: 400px;
-  height: auto;
+  height: 400px;
+  width: auto;
 }
 .about p {
   line-height: 30px;
@@ -34,7 +34,7 @@ body:has(.about) {
     max-width: 768px;
   }
   .about img {
-    width: 300px;
+    height: 300px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -44,7 +44,7 @@ body:has(.about) {
     padding-bottom: var(--size-40);
   }
   .about img {
-    width: 200px;
+    height: 200px;
   }
   .container {
     align-items: center;

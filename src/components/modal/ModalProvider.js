@@ -1,3 +1,4 @@
+'use client'
 import { useEffect } from 'react'
 import { Suspense } from 'react'
 import { useSearchParams } from 'next/navigation'
