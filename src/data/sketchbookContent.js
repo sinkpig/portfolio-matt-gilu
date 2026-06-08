@@ -6,11 +6,11 @@ export const sketchbookContent = {
       title: 'Pokemon Pals',
       art: [
         {
-          src: '/sketchbook/poke-doodles-doggos.jpg',
+          src: '/sketchbook/poke-doodles-cranidos-tyrunt-dreepy.jpg',
           alt: ''
         },
         {
-          src: '/sketchbook/poke-doodles-cranidos-tyrunt-dreepy.jpg',
+          src: '/sketchbook/poke-doodles-doggos.jpg',
           alt: ''
         },
         {
@@ -32,14 +32,39 @@ export const sketchbookContent = {
       ]
     },
     {
-      title: 'Furry Sketches',
+      title: 'Ink Scenes',
       art: [
         {
-          src: '/sketchbook/furry-sketches-1.jpg',
+          src: '/sketchbook/byron-smoking.jpg',
           alt: ''
         },
         {
-          src: '/sketchbook/furry-sketches-2.jpg',
+          src: '/sketchbook/maxi-face.jpg',
+          alt: ''
+        },
+        {
+          src: '/sketchbook/small-maxi.jpg',
+          alt: ''
+        },
+        {
+          src: '/sketchbook/renart-hug.jpg',
+          alt: ''
+        },
+        {
+          src: '/sketchbook/rena-tech.jpg',
+          alt: ''
+        },
+        {
+          src: '/sketchbook/comic-view.jpg',
+          alt: ''
+        },
+      ]
+    },
+    {
+      title: 'Furry Busts',
+      art: [
+        {
+          src: '/sketchbook/furry-sketches-1.jpg',
           alt: ''
         },
         {
@@ -60,11 +85,7 @@ export const sketchbookContent = {
           alt: ''
         },
         {
-          src: '/sketchbook/character-movement.jpg',
-          alt: ''
-        },
-        {
-          src: '/sketchbook/wolf-expressions.jpg',
+          src: '/sketchbook/crows.jpg',
           alt: ''
         },
         {
@@ -72,7 +93,15 @@ export const sketchbookContent = {
           alt: ''
         },
         {
-          src: '/sketchbook/crows.jpg',
+          src: '/sketchbook/wolf-expressions.jpg',
+          alt: ''
+        },
+        {
+          src: '/sketchbook/character-movement.jpg',
+          alt: ''
+        },
+        {
+          src: '/sketchbook/story-beats.jpg',
           alt: ''
         },
       ]
