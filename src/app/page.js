@@ -1,30 +1,24 @@
-'use client'
-import Image from "next/image";
-import Link from "next/link";
+import { getPageBySlug } from '@/lib/wordpress'
+import { parseWordPressHTML } from '@/lib/parseWordpressHTML'
 import ArtGrid from '@/components/ArtGrid'
 import ModalProvider from '@/components/modal/ModalProvider'
-import Title from '@/components/Title'
-import { textContent } from "@/data/textContent";
 import styles from '@/app/page.module.css'
 
-export default function Home() {
-  const t = textContent.home
+export default async function Home() {
+  const page = await getPageBySlug('home');
+  const { headings, paragraphs, images, links } = parseWordPressHTML(page?.content?.rendered ?? '')
+
   return (
     <>
       <main>
         <ArtGrid/>
         <section className={styles.about}>
           <div className={styles.content}>
-            <Title text="Hello!!" bgColor="brown" direction="center"/>
-            <p>{t.paragraph}</p>
-            <Link href={`mailto:${t.email}?subject=${encodeURIComponent(t.subject)}`}>{t.email}</Link>
+            {headings[0]}
+            {paragraphs[0]}
+            {links[0]}
           </div>
-          <Image
-            alt={t.imageAlt}
-            src="/about-section.png"
-            width={500}
-            height={500}
-            loading="lazy"/>
+          {images[0]}
         </section>
       </main>
       <ModalProvider/>
