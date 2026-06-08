@@ -3,6 +3,27 @@ export const freelanceContent = {
   color: 'blue',
   section: [
     {
+      title: '2026',
+      art: [
+        {
+          src: '/freelance/laffey-commission.jpg',
+          alt: '',
+        },
+        {
+          src: '/freelance/toru-comms.jpg',
+          alt: '',
+        },
+        {
+          src: '/freelance/foolfascade-comm.jpg',
+          alt: '',
+        },
+        {
+          src: '/freelance/nines-gavin-comm.jpg',
+          alt: '',
+        },
+      ]
+    },
+    {
       title: '2025',
       art: [
         {
@@ -27,11 +48,11 @@ export const freelanceContent = {
           position: 'top',
         },
         {
-          src: '/freelance/todd-attack.jpg',
+          src: '/freelance/binki-attack.jpg',
           alt: '',
         },
         {
-          src: '/freelance/binki-attack.jpg',
+          src: '/freelance/attack-interrogation-wolf-lurinoodle.jpg',
           alt: '',
         },
         {
@@ -39,7 +60,7 @@ export const freelanceContent = {
           alt: '',
         },
         {
-          src: '/freelance/attack-dip.jpg',
+          src: '/freelance/attack-priscilla-tessasaurusrex.jpg',
           alt: '',
         },
       ]
@@ -48,15 +69,32 @@ export const freelanceContent = {
       title: '2024',
       art: [
         {
+          src: '/freelance/portada-final-vol-1.jpg',
+          alt: '',
+        },
+        {
+          src: '/freelance/busts-sldp.jpg',
+          alt: '',
+        },
+        {
+          src: '/freelance/yearning-lovers.jpg',
+          alt: '',
+        },
+        {
+          src: '/freelance/gavin-in-small.jpg',
+          alt: '',
+        },
+        {
           src: '/freelance/le-wawas-en-prado.jpg',
           alt: '',
         },
+      ]
+    },
+    {
+      title: '2023',
+      art: [
         {
           src: '/freelance/illustration-tex+cj.jpg',
-          alt: '',
-        },
-        {
-          src: '/freelance/portada-final-vol-1.jpg',
           alt: '',
         },
         {
@@ -64,19 +102,11 @@ export const freelanceContent = {
           alt: '',
         },
         {
-          src: '/freelance/portada-final-vol-2.jpg',
-          alt: '',
-        },
-        {
           src: '/freelance/illustration-gavin+tex+nines.jpg',
           alt: '',
         },
         {
-          src: '/freelance/attack-priscilla-tessasaurusrex.jpg',
-          alt: '',
-        },
-        {
-          src: '/freelance/attack-interrogation-wolf.jpg',
+          src: '/freelance/attack-dip.jpg',
           alt: '',
         },
       ]
