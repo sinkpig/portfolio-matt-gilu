@@ -24,6 +24,7 @@ export const freelanceContent = {
         {
           src: '/freelance/the-lady-attack.jpg',
           alt: '',
+          position: 'top',
         },
         {
           src: '/freelance/todd-attack.jpg',

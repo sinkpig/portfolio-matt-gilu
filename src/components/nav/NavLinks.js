@@ -20,7 +20,7 @@ export default function NavLinks() {
         </div>
         <div className={styles.dropdown}>
           <ul>
-            <li>
+            <li className={`${isActive('/freelance') ? styles.active : ''}`}>
               <Link
                 href="/freelance"
                 prefetch={false}
@@ -28,7 +28,7 @@ export default function NavLinks() {
                 Freelance
               </Link>
             </li>
-            <li>
+            <li className={`${isActive('/personal-pieces') ? styles.active : ''}`}>
               <Link
                 href="/personal-pieces"
                 prefetch={false}
@@ -36,7 +36,7 @@ export default function NavLinks() {
                 Personal Pieces
               </Link>
             </li>
-            <li>
+            <li className={`${isActive('/sketchbook') ? styles.active : ''}`}>
               <Link
                 href="/sketchbook"
                 prefetch={false}
@@ -47,15 +47,10 @@ export default function NavLinks() {
           </ul>
         </div>
       </li>
-      <li className={styles.navItem}>
+      <li className={`${styles.navItem} ${isActive('/storyboard') ? styles.active : ''}`}>
         <Link
           prefetch={false}
           href="/storyboard"
-          className="w-element-15"
-          id="radix-:R96:-trigger-1"
-          data-state="closed"
-          aria-expanded="false"
-          aria-controls="radix-:R96:-content-1"
         >
           Storyboard
           <div className={styles.stroke}>
@@ -67,11 +62,6 @@ export default function NavLinks() {
         <Link
           prefetch={false}
           href="/about"
-          className="w-element-16"
-          id="radix-:R96:-trigger-2"
-          data-state="closed"
-          aria-expanded="false"
-          aria-controls="radix-:R96:-content-2"
         >
           About
           <div className={styles.stroke}>

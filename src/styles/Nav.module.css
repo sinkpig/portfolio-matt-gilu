@@ -5,7 +5,7 @@
   flex-wrap: wrap;
   height: var(--nav-height);
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   width: 100%;
   background-color: var(--light-80);
   -webkit-backdrop-filter: blur(40px);
@@ -26,9 +26,6 @@
   justify-content: center;
   color: var(--blue-100);
   padding: var(--size-20);
-}
-.logo svg {
-  width: auto;
 }
 
 .navItem {
@@ -63,6 +60,11 @@
   width: 16px;
   height: 16px;
 }
+.chevron svg,
+.logo svg {
+  width: auto;
+  height: 100%;
+}
 .chevron svg path {
   d: path("M4 6 L8 10 L12 6");
   transition: d 0.45s cubic-bezier(.68,-0.55,.27,1.55);
@@ -90,7 +92,7 @@
   transform: translateX(-45%);
 }
 .navItem.active .stroke {
-  color: var(--light-blue-50);
+  color: var(--light-blue-25);
 }
 
 .toggle {
@@ -109,8 +111,7 @@
   width: max-content;
   max-height: 0;
 }
-.navItem:hover .dropdown,
-.navItem:focus-within .dropdown {
+.navItem:hover .dropdown {
   max-height: 500px;
 }
 .dropdown ul {
@@ -132,7 +133,8 @@
   opacity: 1;
   transform: translateX(0)
 }
-.dropdown li:hover {
+.dropdown li:hover,
+.dropdown li.active {
   background-color: var(--light-blue-25);
 }
 .dropdown a {
@@ -142,12 +144,9 @@
   padding: 12px 16px;
 }
 
-body:has(.sideNav.active) {
-  overflow: hidden;
-}
 .sideNav {
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   top: 0;
   right: 0;
   width: 100vw;
@@ -167,7 +166,6 @@ body:has(.sideNav.active) {
   flex-direction: column;
   align-items: end;
   height: 100%;
-  width: 40vw;
   background-color: var(--background);
   padding: var(--size-20) 0;
   transform: translateX(100%);
@@ -190,7 +188,7 @@ body:has(.sideNav.active) {
   padding: 0 var(--size-20);
 }
 .sideNav .stroke {
-  left: 10%;
+  left: 8%;
 }
 .sideNav .navItem:has(.dropdown) .stroke {
   top: 4%;
@@ -212,20 +210,38 @@ body:has(.sideNav.active) {
   background-color: transparent;
   margin-top: var(--size-20);
 }
-.sideNav .navItem:hover .dropdown,
-.sideNav .navItem:focus-within .dropdown {
+.sideNav .navItem:hover .dropdown {
   display: flex;
 }
 .sideNav .dropdown li {
-  width: 40vw;
   margin-left: -20px;
 }
 
+.sideNav .container,
+.sideNav .dropdown li {
+  width: 40vw;
+}
+
 @media screen and (max-width: 640px) {
+  body:has(.sideNav.active) {
+    overflow: hidden;
+  }
+  .sideNav {
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+  }
   .sideNav.active {
     opacity: 1;
     visibility: visible;
     pointer-events: all;
+  }
+  .sideNav .dropdown li,
+  .sideNav .container {
+    width: 60vw;
+  }
+  .sideNav .navItem:focus-within .dropdown {
+    display: flex;
+    max-height: 500px;
   }
   .toggle {
     display: block;

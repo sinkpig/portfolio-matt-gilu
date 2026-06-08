@@ -18,7 +18,7 @@ export default function Gallery({ title, bgColor, description, object }) {
               <Title text={section.title} tag="h3" bgColor="lightestBlue"/>
               <div className={styles.sectionContainer}>
                 {section.art.map((i) => (
-                  <Art key={i.src} src={i.src} alt={i.alt} />
+                  <Art key={i.src} src={i.src} alt={i.alt} position={i.position}/>
                 ))}
               </div>
             </div>
