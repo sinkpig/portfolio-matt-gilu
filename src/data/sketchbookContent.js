@@ -6,10 +6,10 @@ export const sketchbookContent = {
       title: 'Pokemon Pals',
       art: [
         {
-          src: '/sketchbook/poke-doodles-doggos.jpg',
+          src: '/sketchbook/poke-doodles-cranidos-tyrunt-dreepy.jpg',
         },
         {
-          src: '/sketchbook/poke-doodles-cranidos-tyrunt-dreepy.jpg',
+          src: '/sketchbook/poke-doodles-doggos.jpg',
         },
         {
           src: '/sketchbook/poke-doodles-noibat-swabblu.jpg',
@@ -26,13 +26,33 @@ export const sketchbookContent = {
       ]
     },
     {
-      title: 'Furry Sketches',
+      title: 'Ink Scenes',
+      art: [
+        {
+          src: '/sketchbook/byron-smoking.jpg',
+        },
+        {
+          src: '/sketchbook/maxi-face.jpg',
+        },
+        {
+          src: '/sketchbook/small-maxi.jpg',
+        },
+        {
+          src: '/sketchbook/renart-hug.jpg',
+        },
+        {
+          src: '/sketchbook/rena-tech.jpg',
+        },
+        {
+          src: '/sketchbook/comic-view.jpg',
+        },
+      ]
+    },
+    {
+      title: 'Furry Busts',
       art: [
         {
           src: '/sketchbook/furry-sketches-1.jpg',
-        },
-        {
-          src: '/sketchbook/furry-sketches-2.jpg',
         },
         {
           src: '/sketchbook/furry-sketches-3.jpg',
@@ -49,16 +69,19 @@ export const sketchbookContent = {
           src: '/sketchbook/centaurs.jpg',
         },
         {
-          src: '/sketchbook/character-movement.jpg',
-        },
-        {
-          src: '/sketchbook/wolf-expressions.jpg',
+          src: '/sketchbook/crows.jpg',
         },
         {
           src: '/sketchbook/venados.jpg',
         },
         {
-          src: '/sketchbook/crows.jpg',
+          src: '/sketchbook/wolf-expressions.jpg',
+        },
+        {
+          src: '/sketchbook/character-movement.jpg',
+        },
+        {
+          src: '/sketchbook/story-beats.jpg',
         },
       ]
     }
