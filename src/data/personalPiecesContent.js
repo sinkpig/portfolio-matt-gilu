@@ -21,7 +21,7 @@ export const personalPiecesContent = {
           src: '/personal-pieces/portfolio_character_views.jpg',
         },
         {
-          src: '/personal-pieces/expressions_3.jpg',
+          src: '/personal-pieces/rou-faces.jpg',
         },
         {
           src: '/personal-pieces/lesbians-views.jpg',
@@ -31,6 +31,9 @@ export const personalPiecesContent = {
         },
         {
           src: '/personal-pieces/kids-views-team.jpg',
+        },
+        {
+          src: '/personal-pieces/superbat-kiddos.jpeg',
         },
         {
           src: '/personal-pieces/ten-faces.jpg',
@@ -47,16 +50,25 @@ export const personalPiecesContent = {
           src: '/personal-pieces/mini-study-animation-ten.gif',
         },
         {
-          src: '/personal-pieces/cell_shade_2.jpg',
+          src: '/personal-pieces/gilu-amber.gif',
         },
         {
-          src: '/personal-pieces/concurso-vograce.jpg',
+          src: '/personal-pieces/2-idiots.gif',
+        },
+        {
+          src: '/personal-pieces/cell_shade_2.jpg',
         },
         {
           src: '/personal-pieces/poshan-dance.jpg',
         },
         {
+          src: '/personal-pieces/concurso-vograce.jpg',
+        },
+        {
           src: '/personal-pieces/shieni.jpg',
+        },
+        {
+          src: '/personal-pieces/shin-wings.jpg',
         },
         {
           src: '/personal-pieces/nat-rena-window.jpg',
@@ -66,6 +78,7 @@ export const personalPiecesContent = {
         },
         {
           src: '/personal-pieces/soldier-paint.jpg',
+          position: 'vertical-25',
         },
       ]
     },

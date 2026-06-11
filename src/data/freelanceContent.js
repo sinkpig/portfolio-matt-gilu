@@ -15,6 +15,9 @@ export const freelanceContent = {
           src: '/freelance/foolfascade-comm.jpg',
         },
         {
+          src: '/freelance/frisk-commission.jpg',
+        },
+        {
           src: '/freelance/nines-gavin-comm.jpg',
         },
       ]
@@ -83,9 +86,6 @@ export const freelanceContent = {
         },
         {
           src: '/freelance/illustration-gavin+tex+nines.jpg',
-        },
-        {
-          src: '/freelance/attack-dip.jpg',
         },
       ]
     }

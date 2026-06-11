@@ -39,12 +39,14 @@ export const sketchbookContent = {
         },
         {
           src: '/sketchbook/renart-hug.jpg',
+          position: 'top',
         },
         {
           src: '/sketchbook/rena-tech.jpg',
         },
         {
           src: '/sketchbook/comic-view.jpg',
+          position: 'bottom',
         },
       ]
     },
