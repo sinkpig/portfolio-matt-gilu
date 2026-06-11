@@ -1,38 +1,32 @@
 export const homeImages = {
   firstColumn: [
     {
-      src: '/shieni.jpg',
+      src: '/poshan-dance-short.jpg',
     },
     {
       src: '/concurso-vograce.jpg',
     },
-    {
-      src: '/dot-attack.jpg',
-    },
   ],
   secondColumn: [
-    {
-      src: '/mini-study-animation-ten.gif',
-    },
     {
       src: '/renard-attack.jpg',
     },
     {
-      src: '/berry-attack.jpg',
+      src: '/ten-portfolio-views.jpg',
     },
     {
-      src: '/attack-dip.jpg',
+      src: '/lover-fish.jpg',
     },
   ],
   thirdColumn: [
     {
-      src: '/characters.jpg',
+      src: '/view-from-mers.jpg',
     },
     {
-      src: '/cell-shade.jpg',
+      src: '/mini-study-animation-ten.gif',
     },
     {
-      src: '/character-sheet-byron.jpg',
+      src: '/berry-attack.jpg',
     },
   ]
 }
