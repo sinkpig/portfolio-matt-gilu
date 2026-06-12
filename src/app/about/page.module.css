@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
   gap: 80px;
-  max-width: 992px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding: var(--size-40) var(--size-20);
@@ -28,16 +28,16 @@ body:has(.about) {
   margin-bottom: var(--size-20);
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1200px) {
   .about {
     gap: 40px;
-    max-width: 768px;
+    max-width: 992px;
   }
   .about img {
     width: 300px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .about {
     flex-direction: column;
     padding-top: var(--size-40);
