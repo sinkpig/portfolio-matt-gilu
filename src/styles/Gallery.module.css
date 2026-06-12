@@ -31,40 +31,86 @@
 }
 .sectionContainer a {
   flex: 1 1 auto;
-  min-width: 150px;
-  max-height: 350px;
-}
-.sectionContainer a:nth-child(4n+1) {
-  width: 33%;
-}
-.sectionContainer a:nth-child(4n+2),
-.sectionContainer a:nth-child(4n+4) {
-  width: 30%;
-}
-.sectionContainer a:nth-child(4n+3) {
-  width: 36%;
-}
-.sectionContainer a:last-child {
-  max-width: 50%;
+  max-height: 240px;
+  /* min-width: 190px; */
+  max-width: 100%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 520px) {
   .sectionContainer a {
-    max-height: 235px;
+    max-width: 55%;
+  }
+  .sectionContainer a:nth-child(4n+1),
+  .sectionContainer a:nth-child(4n+4) {
+    width: 44%;
+  }
+  .sectionContainer a:nth-child(4n+2),
+  .sectionContainer a:nth-child(4n+3) {
+    width: 54%;
   }
 }
-@media screen and (max-width: 560px) {
+@media screen and (min-width: 768px) {
   .sectionContainer a {
-    max-height: 200px;
-    min-height: 155px;
+    min-width: 33.4%;
+    max-height: 300px;
+  }
+  .sectionContainer a:nth-child(4n+1) {
+    width: 250px;
+  }
+  .sectionContainer a:nth-child(4n+2) {
+    width: 325px;
+  }
+  .sectionContainer a:nth-child(4n+3) {
+    width: 180px;
+  }
+  .sectionContainer a:nth-child(4n+4) {
+    width: 380px;
   }
 }
-@media screen and (max-width: 460px) {
+@media screen and (min-width: 992px) {
   .sectionContainer a {
-    width: 100% !important;
-    max-height: 240px;
+    max-height: 250px;
+    min-width: unset;
+    max-width: 380px;
   }
-  .sectionContainer a:last-child {
-    max-width: unset;
+}
+@media screen and (min-width: 1152px) {
+  .sectionContainer a {
+    max-width: 35%;
+    max-height: 340px;
+  }
+  .sectionContainer a:nth-child(4n+1) {
+    width: 350px;
+  }
+  .sectionContainer a:nth-child(4n+2) {
+    width: 425px;
+  }
+  .sectionContainer a:nth-child(4n+3) {
+    width: 280px;
+  }
+  .sectionContainer a:nth-child(4n+4) {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .sectionContainer a {
+    max-height: 350px;
+  }
+}
+@media screen and (min-width: 1900px) {
+  .sectionContainer a {
+    max-height: 400px;
+  }
+  .sectionContainer a:nth-child(4n+1) {
+    width: 450px;
+  }
+  .sectionContainer a:nth-child(4n+2) {
+    width: 525px;
+  }
+  .sectionContainer a:nth-child(4n+3) {
+    width: 380px;
+  }
+  .sectionContainer a:nth-child(4n+4) {
+    width: 580px;
   }
 }

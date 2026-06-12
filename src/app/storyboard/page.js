@@ -4,6 +4,7 @@ import Title from "@/components/Title"
 import ModalProvider from "@/components/modal/ModalProvider"
 import Art from "@/components/Art"
 import styles from '@/app/storyboard/page.module.css'
+import { altRegex } from "@/utils/altRegex"
 
 export default function Storyboard() {
   const content = storyboardContent
@@ -28,7 +29,7 @@ export default function Storyboard() {
               <div className={styles.overflow}>
                 <div className={styles.thumbs}>
                   {section.images.map((i) => (
-                    <Art key={i.src} src={i.src} alt={i.alt} position={i.position} />
+                    <Art key={i.src} src={i.src} alt={`${section.title} ${i.src.match(altRegex)[1].replace(/[-_]/g, ' ')} image`} position={i.position} />
                   ))}
                 </div>
               </div>

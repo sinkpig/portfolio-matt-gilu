@@ -4,7 +4,7 @@ import Link from 'next/link'
 import styles from '@/styles/Art.module.css'
 import { usePathname } from 'next/navigation'
 
-export default function Art({src, alt, position}) {
+export default function Art({src, alt = 'Art image', position}) {
   const pathname = usePathname()
   const isHome = pathname === '/'
 

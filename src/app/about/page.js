@@ -10,7 +10,7 @@ export default function About() {
   return (
     <>
       <main className={styles.about}>
-        <Image src={t.src} alt={t.imageAlt} width={600} height={600} loading="eager"/>
+        <Image src={t.src} alt="Decorative image in Matt Gilu's portfolio" width={600} height={600} loading="eager"/>
         <div className={styles.container}>
           <Title text={t.title} bgColor="orange"/>
           <p>{t.paragraph}</p>
