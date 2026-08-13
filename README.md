@@ -1,3 +1,9 @@
+Portfolio for Matt Gilu built with Next.js
+
+Future Goals: Convert to a Headless CMS using WordPress
+
+-------------
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
