@@ -1,5 +1,6 @@
 export const storyboardContent = {
   title: 'Storyboard',
+  body: 'For work inquiries or other questions, feel free to contact me at giannibarbierisilva@yahoo.com.',
   color: 'blue',
   section: [
     {

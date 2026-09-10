@@ -13,6 +13,7 @@ export default function Storyboard() {
       <main>
         <div className={styles.container}>
           <Title bgColor={content.color} text={content.title}/>
+          <p>{content.body}</p>
         </div>
 
         <div className={styles.section}>
