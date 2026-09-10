@@ -80,6 +80,9 @@ export const personalPiecesContent = {
           src: '/personal-pieces/soldier-paint.jpg',
           position: 'vertical-25',
         },
+        {
+          src: '/personal-pieces/digital-circus-finale.jpg'
+        }
       ]
     },
     {
