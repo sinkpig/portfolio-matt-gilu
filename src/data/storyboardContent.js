@@ -55,14 +55,20 @@ export const storyboardContent = {
       ]
     },
     {
-      title: 'Batman',
-      subtitle: 'Owl attack',
-      description: "Short scene where an Owl combatant from the Court of Owls fights and ultimately defeats Batman.",
-      link: 'https://docs.google.com/presentation/d/e/2PACX-1vTUZQzb4hD8-rkpITKHm-Pj93EfKMspVpsQlhTU13NQyEAfYZ7gF0Q8F3a1oq8UoVcEEtpeZzk9fFSU/pubembed?start=false&loop=true&delayms=3000',
+      title: 'Mon Amour',
+      subtitle: "From Stromae's Song, Mon Amour",
+      description: "Richard is wounded and just wants to have a slow day, but he isn't counting on Kory hoping to have some fun on their free day. She charms him into a little dance, and Richard doesn't exactly regret it",
+      link: 'https://docs.google.com/presentation/d/e/2PACX-1vRDQQgwgUfrFwelhcRfDdb3_ALr6bq3T-hGqPQxWYpUHX0bUgL9ItG4eWClrse5Oa7nIRUSv6-fxwvq/pubembed?start=false&loop=true&delayms=3000',
       images: [
         {
-          src: '/storyboard/batman-thumbnails.jpg',
+          src: '/storyboard/mon-amour-1.jpg',
         },
+        {
+          src: '/storyboard/mon-amour-2.jpg',
+        },
+        {
+          src: '/storyboard/mon-amour-3.jpg',
+        }
       ]
     },
   ]
