@@ -7,7 +7,7 @@ export const homeImages = {
       src: '/poshan-dance-short.jpg',
     },
     {
-      src: '/dot-attack.jpg',
+      src: '/digital-circus-finale.jpg',
     },
   ],
   secondColumn: [
