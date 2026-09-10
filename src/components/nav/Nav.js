@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation'
+import { textContent } from "@/data/textContent";
 import styles from '@/styles/Nav.module.css'
 import Logo from '@/components/icons/Logo'
 import Burger from '@/components/icons/Burger'
@@ -26,6 +27,7 @@ export default function Nav() {
       <nav className={styles.nav}>
         <Link prefetch={false} href="/" className={styles.logo}>
           <Logo/>
+          <span className={styles.slogan}>{textContent.slogan}</span>
         </Link>
 
         <NavLinks/>
