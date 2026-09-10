@@ -10,7 +10,6 @@
   background-color: var(--light-80);
   -webkit-backdrop-filter: blur(40px);
   backdrop-filter: blur(40px);
-  padding-right: var(--size-20);
 }
 .nav ul {
   display: flex;
@@ -26,7 +25,7 @@
   align-items: center;
   justify-content: center;
   color: var(--blue-100);
-  padding: var(--size-10) var(--size-20);
+  padding: var(--size-10) 0;
   font-weight: 700;
   gap: 4px;
 }
@@ -57,6 +56,50 @@
 .navItem:hover,
 .logo:hover {
   background: var(--background);
+}
+
+.emailBtn {
+  background-color: var(--lightest-blue-100);
+  min-width: 90px;
+}
+.emailBtn:hover {
+  background-color: var(--light-blue-50);
+}
+
+.tooltipContainer {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.tooltip {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+  width: 130px;
+  background-color: var(--dark-80);
+  color: var(--background);
+  text-align: center;
+  border-radius: 4px;
+  padding: var(--size-10) 4px;
+  top: 85%;
+  right: 4px;
+  opacity: 0;
+  line-height: 100%;
+  transition: opacity 0.3s;
+}
+.tooltip::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 69%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent var(--dark-80) transparent;
+}
+.tooltip.active {
+  visibility: visible;
+  opacity: 1;
 }
 
 .chevron {
@@ -203,7 +246,7 @@
 .sideNav .active .stroke {
   transform: translateX(0);
 }
-.sideNav button {
+.sideNav .btn {
   width: 24px;
   height: 24px;
   margin-right: var(--size-20);
@@ -228,7 +271,7 @@
   width: 40vw;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 670px) {
   body:has(.sideNav.active) {
     overflow: hidden;
   }
@@ -254,5 +297,13 @@
   }
   .nav > ul {
     display: none;
+  }
+
+  .tooltip {
+    top: 100%;
+    right: 20%;
+  }
+  .tooltip::after {
+    left: 50%;
   }
 }

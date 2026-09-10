@@ -15,9 +15,9 @@ export default function Home() {
         <ArtGrid/>
         <section className={styles.about}>
           <div className={styles.content}>
-            <Title text="Hello!!" bgColor="brown" direction="center"/>
+            <Title text={t.title} bgColor="brown" direction="center"/>
             <p>{t.paragraph}</p>
-            <Link href={`mailto:${t.email}?subject=${encodeURIComponent(t.subject)}`}>{t.email}</Link>
+            <Link href={`mailto:${textContent.info.email}?subject=${encodeURIComponent(t.subject)}`}>{textContent.info.email}</Link>
           </div>
           <Image
             alt="Decorative image in Matt Gilu's portfolio"
